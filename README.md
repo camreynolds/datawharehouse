@@ -68,7 +68,6 @@ Para realizar las pruebas de Importar Contactos se debe realizar los siguientes 
   firstname;lastname;job;emailCompanie;address;city_id;companie_id
   ```
 
-**6)
 ## Recursos y tecnologías utilizadas
 * Node
 * Postman
