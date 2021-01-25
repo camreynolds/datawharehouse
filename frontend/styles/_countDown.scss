@@ -1,0 +1,40 @@
+#divContCountdown {
+    grid-area: timerSession;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(1, 1, 1, 0.4);    
+}
+
+.divTitleCountdown{
+    height: 25px;
+}
+.divCountdown,.divTitleCountdown{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+.spanTitle,.spanTime{
+    font-weight: bold;
+    font-style: italic;
+}
+.spanTime {
+    font-size: 40px;
+    color: #fff;
+}
+.color-full {
+    background: #53bb74;
+    
+}
+
+.color-half {
+    background: #ebc85d;
+}
+
+.color-empty {
+    background: #e5554e;
+}

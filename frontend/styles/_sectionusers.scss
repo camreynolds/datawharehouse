@@ -1,0 +1,41 @@
+
+#secuser{
+    grid-template-rows: repeat(5,40px) auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'titulo titulo'
+                          'nombre apellido'
+                          'email perfil'
+                          'pass1 pass2'
+                          'save save'
+                          'error error';
+    grid-gap:25px;
+    justify-content: center;
+}
+
+.txtNombre{
+    grid-area: nombre;
+}
+.txtApellido{
+    grid-area: apellido;
+}
+.txtEmail{
+    grid-area: email;
+}
+.selPerfil{
+    grid-area: perfil;
+}
+.txtPassword{
+    grid-area: pass1;
+}
+.txtPassword2{
+    grid-area: pass2;
+}
+.btnCreateUser{
+    grid-area: save;
+}
+
+#secuser-grid{
+    width: 100%;
+    grid-area: griduser ;
+    
+}

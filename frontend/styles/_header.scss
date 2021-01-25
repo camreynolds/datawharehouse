@@ -1,0 +1,26 @@
+.headDW{
+    grid-area: header;
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 15px;
+    #imgExist{
+        margin-right: 10px;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+}
+#figLogo{
+    align-self: center;
+    justify-self: center;
+    width: 314px;
+    height: 70px;
+    grid-area: logo;
+    img{
+        width: 314px;
+        height: 70px;
+    }
+}
+

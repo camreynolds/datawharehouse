@@ -1,0 +1,100 @@
+#frmRegions {
+    width: 700px;
+    height: 800px;
+    grid-template-rows: repeat(2, 40px) auto 100px;
+    grid-template-columns: 100%;
+    grid-template-areas: 'titulo'
+        'addRegion'
+        'RCC'
+        'error';
+
+    grid-gap: 10px;
+
+    .ulRegion {
+        grid-area: RCC;
+        width: 500px;
+        height: 100%;
+        justify-self: center;
+        overflow-y:scroll;
+        .liRegion {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .liCountry,
+    .liCity {
+        padding-top: 10px;
+    }
+
+    .ulCountry,
+    .ulCity {
+        margin-left: 25px;
+    }
+
+    li {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: 'nodeTitle action';
+
+        span {
+            grid-area: nodeTitle;
+        }
+
+        #button-actions {
+            grid-area: action;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .caret {
+        cursor: pointer;
+        user-select: none;
+        /* Prevent text selection */
+    }
+
+    .caret::before {
+        content: "\25B6";
+        color: black;
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    .caret-down::before {
+        transform: rotate(90deg);
+    }
+
+    .nested {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
+.divControls{
+    display: flex;
+    width: 300px;
+    height: 100%;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+.div-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px ;
+    grid-template-areas: 'save close';
+    grid-gap:25px;
+    justify-content: center;
+    align-content: center;
+    .btnSave{
+        grid-area: save;
+    }
+    .btnClose{
+        grid-area: close;
+    }
+}
+

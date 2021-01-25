@@ -1,0 +1,66 @@
+.navDW {
+
+    background-color: white;
+    grid-area: navbar;
+    display: grid;
+    grid-template-rows: 100px auto 80px;
+    grid-template-columns: auto;
+    grid-template-areas: 'profile''menu''timerSession';
+
+    #divProfile {
+        grid-area: profile;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        background-color: #F4F5FD;
+        padding: 10px;
+
+        .spanUsername,
+        .spanFullname {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .spanRol {
+            font-style: italic;
+        }
+    }
+
+    .ulDW {
+        grid-area: menu;
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .aDW {
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+    .liDW{
+        box-shadow: 0 1px 2px 0 rgba(1, 1, 1, 0.4);    
+    }
+    .liDW,
+    .aDW {
+        font-weight: bold;
+        a {
+            color:black;
+        }
+
+        &:hover {
+            background: linear-gradient(to bottom, #3eb2ff 5%, #1C6EA4 100%);
+
+            a {
+                color: white;
+            }
+
+            cursor: pointer;
+        }
+    }
+
+}

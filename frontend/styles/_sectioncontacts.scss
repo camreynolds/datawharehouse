@@ -1,0 +1,214 @@
+#seccontacts-cont {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px minmax(auto, 0) auto;
+    grid-template-areas: 'headCont''frmCont''gridCont';
+    grid-gap: 25px;
+    padding: 25px;
+}
+
+#secheader-cont {
+    grid-area: headCont;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+#seccontacts-grid{
+  grid-area:gridCont;  
+  align-self: flex-start;
+}
+
+
+#divFAB {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    .fabPlus {
+        width: 50px;
+        height: 50px;
+        background-color: #5383FF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 3px #999;
+
+        i {
+            color: white;
+            font-size: 20px;
+
+        }
+    }
+
+}
+
+
+.ulFAB {
+    height: 50px;
+    visibility: hidden;
+    margin-right: 10px;
+
+    .fabtn {
+        margin-left: 10px;
+
+    }
+}
+
+.liFAB {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeFAB {
+
+    visibility: visible;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#frmContacts {
+    width: 950px;
+    padding: 25px;
+    height: 550px;
+    grid-area: frmCont;
+    align-self: start;
+    justify-self: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(7, 40px)  auto;
+    grid-template-areas: 'firstname canal'
+        'lastname canal'
+        'job canal'
+        'email canal'
+        'companie canal'
+        'address canal'
+        'city canal'
+        'save save'
+        'error error';
+      
+    /*     fieldset {
+        border: 1px solid #999;
+        height: 100%;
+        padding: 10px;
+        grid-area:canal;
+        legend {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    } */
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .liCanal {
+        display: flex;
+        align-items:center;
+        padding: 13px;
+
+        select {
+            margin-left: 10px;
+            width: 150px;
+
+        }
+    }
+
+    .ulChannel {
+        grid-area: canal;
+        align-self: center;
+    }
+
+    .txtNombre {
+        grid-area: firstname;
+    }
+
+    .txtApellido {
+        grid-area: lastname;
+    }
+
+    .txtCargo {
+        grid-area: job;
+    }
+
+    .txtEmail {
+        grid-area: email;
+    }
+    #selCmp{
+        grid-area: companie;
+    }
+    .txtDireccion {
+        grid-area: address;
+    }
+    .sg-container-search {
+        grid-area: city;
+    }
+}
+
+#ulAvatar{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #liAvatar{
+ 
+        img{
+            margin-left:-8px ;            
+            width: 30px;
+            height: 30px;
+            &:hover{
+                z-index: 500;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}
+.divDownload{
+    display: grid;
+    grid-template-rows: repeat(3,50px);
+    grid-template-columns: 200px;
+    grid-template-areas: 'contacts' 'regions' 'companies';
+    justify-items: start;
+    align-items: center;
+    
+     #lblcontacts,#lblregions,#lblcompanies{
+ margin-left: 25PX;
+    }
+ 
+    #downContact,#lblcontacts{
+        grid-area: contacts;
+    }
+    #downRegion,#lblregions{
+        grid-area: regions;
+    }
+    #downCompanie,#lblcompanies{
+        grid-area: companies;
+    }
+}

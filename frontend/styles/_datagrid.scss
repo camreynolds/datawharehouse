@@ -1,0 +1,125 @@
+.datagrid {
+    border: 1px solid #1C6EA4;
+    background-color: white;
+    width: 100%;
+    text-align: justify;
+    border-collapse: collapse;
+
+    /*    td {
+        background-color: white;
+
+    } */
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #AAAAAA;
+    }
+
+
+
+}
+
+.datagrid-thead {
+    text-align: center;
+    background: #1C6EA4;
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+
+    th {
+        color: #FFFFFF;
+        border-left: 2px solid #D0E4F5;
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+}
+
+.div-th-search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        color: black;
+    }
+}
+
+.datagrid-thead-tr-th-search,
+.datagrid-tfoot-tr-td-pag {
+    background: #1C6EA4;
+    color: #FFFFFF;
+    // padding: 2px 8px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+}
+
+.datagrid-tbody-checkbox,
+.datagrid-tbody-actions {
+    text-align: center;
+}
+
+
+
+table .datagrid-tbody-tr:hover {
+    background:  #dcebf7;
+    cursor: pointer;
+}
+
+
+
+/*******PAGINATION**********/
+.div-pagination {
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto 1f auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'prev pages next';
+    grid-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+
+    .div-pagination-pages {
+        grid-area: pages;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+
+    }
+
+    a,
+    p {
+        color: black;
+        font-weight: bold;
+    }
+
+    .aPrev {
+        grid-area: prev;
+        visibility: visible;
+        margin-left: 10px;
+    }
+
+    .aNext {
+        grid-area: next;
+        visibility: visible;
+        margin-right: 10px;
+    }
+
+    .a-Hidden {
+        visibility: hidden;
+    }
+
+}
+
+.selPage {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 5px;
+    width: 75px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #AAAAAA;
+}

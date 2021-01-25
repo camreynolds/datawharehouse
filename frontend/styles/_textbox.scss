@@ -1,0 +1,28 @@
+.txtPrincipal{
+    width: 300px;
+    padding: 10px;
+}
+.txtPrincipal, select{
+    height: 40px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+
+}
+fieldset{
+    height: 55px;
+    border-radius: 15px;
+}
+
+.validate:valid {
+    border: 2px solid green;
+}
+
+.validate:invalid {
+    border: 2px solid red;
+}

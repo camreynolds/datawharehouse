@@ -1,0 +1,31 @@
+.sg-container-search {
+    //width: 551px;
+    width: 100%;
+    grid-area: ciudad;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    .sg-line-search {
+        width: 80%;
+    }
+
+    .ul-autocomplete {
+        width: 100%;
+        background-color: white;
+        
+    }
+    .li-autocomplete {
+        border: 1px solid  #6e6e6e;
+        .a-autocomplete {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: 400px;
+            font-size: 16px;
+            color: #6e6e6e;
+            padding: 10px;
+
+        }
+    }
+    z-index: 6;
+}

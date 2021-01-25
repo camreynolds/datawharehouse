@@ -1,0 +1,43 @@
+/* #seccompanie-cont{
+    width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: 'controls gridCompanies';
+        grid-gap:25px; 
+        justify-content: center;
+        align-content: center;
+        padding: 25px;
+} */
+#frmCompanies{
+    grid-template-rows: repeat(4,40px) auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'titulo titulo'
+                          'nombre direccion'
+                          'email telefono' 
+                          'ciudad ciudad' 
+                          'save save'
+                          'error error';
+    height: 100%;
+}
+
+
+.txtNomComp{
+grid-area: nombre;
+}
+.txtDirComp{
+    grid-area: direccion;
+}
+.txtEmail{
+    grid-area: email;
+}
+.txtTelefono{
+    grid-area: telefono;
+}
+
+ .txtCity{
+    width: 100%;
+  } 
+.btnCreateCompanie{
+    grid-area: save;
+}
