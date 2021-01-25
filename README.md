@@ -46,7 +46,29 @@ npm run start
 ```
 node ./src/index.js
 ```
-**5)
+
+**5) Testing
+Para realizar las pruebas de Importar Contactos se debe realizar los siguientes pasos:
+  **5.1 Descargar Regiones y Compañías con del botón de Export.**
+  
+  **5.2 Obtener los campos ID de Regiones/Compañías.**
+  
+  **5.3 Para armar el archivo CSV se debe respetar los siguientes campos:**
+  
+  * firstname: Nombre.
+  * lastname: Apellido.
+  * job: Cargo.
+  * emailCompanie: Email.
+  * address: Dirección.
+  * city_id: ID Obtenido en el punto 5.2 correspondiente a Regiones.
+  * companie_id: ID Obtenido en el punto 5.2 correspondiente a Companías.
+  
+  * Importante: Siempre mantener la cabecera del archivo
+  ```
+  firstname;lastname;job;emailCompanie;address;city_id;companie_id
+  ```
+
+**6)
 ## Recursos y tecnologías utilizadas
 * Node
 * Postman
